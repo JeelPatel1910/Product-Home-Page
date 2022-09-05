@@ -1,5 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
 }
 nav{
     display: flex;
@@ -22,6 +24,8 @@ nav{
     font-weight: 400;
 }
 .intro-section{
+    position: relative;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin: 2% 4%;
@@ -32,7 +36,7 @@ nav{
 .headphone-div{
     position: relative;
     top: -12px;
-    right: 74px;
+    right: 270px;
 }
 .discount{
     position: absolute;
@@ -58,7 +62,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 50%;
-    margin-left: 12%;
+    margin-left: -19%;
 }
 .dot{
     height: 2rem;
@@ -84,7 +88,7 @@ nav{
 }
 .right-section button{
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: -7%;
 }
 .left-section h3{
     display: flex;
@@ -125,21 +129,109 @@ img[alt="circles"]{
     margin-bottom: 5%;
 }
 
-@media screen and (max-width:1750px) and (min-width:1630px) {
+@media screen and (max-width:1750px) and (min-width:1530px) {
     .left-section h1{
        font-size: 4.8rem; 
     }
 }
-@media screen and (max-width:1630px) and (min-width: 1430px){
+@media screen and (max-width:1530px) and (min-width: 1330px){
     .left-section h1{
        font-size: 4rem; 
     }
+    .headphone-div{
+        right: 180px;
+    }
+    .dots{
+        margin-left: -5%;
+    }
+    .right-section button{
+        margin-left: 7%;
+    }
 }
-@media screen and (max-width:1430px) {
+@media screen and (max-width:1330px) and (min-width:1030px) {
     .left-section h1{
        font-size: 3rem; 
     }
     .sub-headline{
         font-size: 1.2rem;
+    }
+    .headphone-div{
+        right: 40px;
+    }
+    .dots{
+        margin-left: 18%;
+    }
+    .right-section button{
+        margin-left: 32%;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1030px) and (min-width:768px) {
+    .left-section h1{
+       font-size: 3rem; 
+    }
+    .sub-headline{
+        font-size: 1.2rem;
+    }
+    .headphone-div{
+        right: -90px;
+    }
+    .dots{
+        margin-left: 40%;
+    }
+    .right-section button{
+        margin-left: 53%;
+    }
+    .nav-items{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:300px) {
+    .left-section h1{
+       font-size: 3rem; 
+    }
+    .sub-headline{
+        font-size: 1.2rem;
+    }
+    .headphone-div{
+        right: 15px;
+        top: 50px;
+    }
+    .intro-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .left-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+    .left-section h3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   .dots{
+        margin-top: 10%;
+        margin-left: 23%;
+   }
+   .right-section button{
+    margin-left: 35%;
+    }
+    .nav-items{
+    display: none;
+    }
+    nav{
+        width: 100%;
+    }
+    nav .actions{
+        display: none;
     }
 }
